@@ -1,30 +1,23 @@
-/**
- * Lớp biểu diễn thông tin một Sản Phẩm
- */
 public class SanPham {
     private String maSP;
     private String tenSP;
     private double donGia;
     private int soLuongTon;
 
-    // Constructor 1: Không tham số
     public SanPham() {
     }
 
-    // Constructor 2: 2 tham số
     public SanPham(String maSP, String tenSP) {
         this.maSP = maSP;
         this.tenSP = tenSP;
     }
 
-    // Constructor 3: Đủ 4 tham số
     public SanPham(String maSP, String tenSP, double donGia, int soLuongTon) {
         this(maSP, tenSP);
         this.donGia = donGia;
         this.soLuongTon = soLuongTon;
     }
 
-    // Getter và Setter
     public String getMaSP() {
         return maSP;
     }
@@ -57,7 +50,6 @@ public class SanPham {
         this.soLuongTon = soLuongTon;
     }
 
-    // Phương thức hiển thị thông tin sản phẩm
     public void hienThi() {
         String giaFormat = String.format("%,.0f", this.donGia).replace(',', '.');
         System.out.printf("%-5s %-17s %8s   tồn %d\n",
