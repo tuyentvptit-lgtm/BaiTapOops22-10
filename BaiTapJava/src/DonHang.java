@@ -1,6 +1,3 @@
-/**
- * Lớp biểu diễn thông tin một Đơn Hàng
- */
 public class DonHang {
     private String tenKhach;
     private SanPham sanPham;
@@ -17,7 +14,6 @@ public class DonHang {
         }
     }
 
-    // Phương thức tính thành tiền
     public double tinhThanhTien() {
         double thanhTien = this.sanPham.getDonGia() * this.soLuong;
         if (this.soLuong >= 5) {
@@ -26,7 +22,6 @@ public class DonHang {
         return thanhTien;
     }
 
-    // Phương thức in thông tin đơn hàng
     public void inDonHang() {
         String tienFormat = String.format("%,.0f", this.tinhThanhTien()).replace(',', '.');
         System.out.printf("%-6s %-17s %-4d %9s\n",
