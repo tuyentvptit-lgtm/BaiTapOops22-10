@@ -3,7 +3,6 @@ public class DonHang {
     private SanPham sanPham;
     private int soLuong;
 
-    // Constructor nhận đủ 3 giá trị
     public DonHang(String tenKhach, SanPham sanPham, int soLuong) {
         this.tenKhach = tenKhach;
         this.sanPham = sanPham;
